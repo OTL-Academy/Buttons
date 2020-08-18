@@ -19,8 +19,12 @@
  }
 
  .bleu_bloc{
-    background-color: rgba(55, 63, 170, 0.109);
- }
+   background-color: rgba(55, 63, 170, 0.109);
+}
+
+.rouge_bloc{
+   background-color: rgba(247, 43, 63, 0.1)
+}
 
  /* Code pour le bloc de bouttons */
  .buttons {
@@ -61,6 +65,11 @@
     cursor : loarding
  }
 
+ .buttons .button:hover{
+    opacity: 0.8;
+    transform : translate(10px,10px);
+ }
+
  .buttons .button.noir {
     background-color: rgb(23, 24, 40);
  }
@@ -70,5 +79,59 @@
  }
 
  .buttons .button.bleu {
-    background-color: rgb(27, 42, 240);
+   background-color: rgb(27, 42, 240);
+}
+
+ .buttons .switch,
+ .buttons .switch_deux{
+    background-color: rgb(247, 43, 63);
+    padding: 8px;
+    padding-right: 36px;
  }
+
+ /* Premier switch */
+ .buttons .switch .switcher{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #ffff;
+    border-radius: 50%;
+    /* padding: 16px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .switch .switcher .pin{
+
+   display: block;
+    width: 16px;
+    height: 16px;
+    background-color:rgb(247, 43, 63);
+    border-radius: 50%;
+
+}
+
+/* Fin du premier switch */
+/* Deuxieme switch */
+
+.buttons .switch_deux{
+   background-color: rgb(30, 38, 101);
+}
+.buttons .switch_deux .switcher{
+   width: 16px;
+   height: 16px;
+   display: block;
+   background-color: rgb(30, 38, 101);
+   border: 8px solid  rgb(255, 255, 255);
+   border-radius: 50%;
+   /* Attention */
+   box-sizing: content-box;
+}
+
+
+
+
+
+
+
