@@ -86,7 +86,16 @@
  .buttons .switch_deux{
     background-color: rgb(247, 43, 63);
     padding: 8px;
-    padding-right: 36px;
+    padding-right: 48px;
+    /* Effet de transition */
+    transition: ease-in-out 300ms all;
+ }
+
+ .buttons .switch:hover{
+   -webkit-box-shadow: -3px 13px 15px 15px rgba(247, 43, 63, .2);
+   box-shadow: -3px 13px 15px 15px rgba(247, 43, 63, .2);
+   /* Effet de transition */
+   transition: ease-in-out 300ms all;
  }
 
  /* Premier switch */
